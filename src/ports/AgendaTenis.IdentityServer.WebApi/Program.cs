@@ -1,31 +1,20 @@
 using AgendaTenis.IdentityServer.Core.Aplicacao.CriarConta;
 using AgendaTenis.IdentityServer.Core.Aplicacao.GerarToken;
+using AgendaTenis.IdentityServer.WebApi;
 using AgendaTenis.WebApi.ConfiguracaoDeServicos;
+using Microsoft.AspNetCore.Hosting;
 
-var builder = WebApplication.CreateBuilder(args);
-
-builder.Services.AddControllers();
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-
-builder.Services.RegistrarIdentity(builder.Configuration);
-builder.Services.RegistrarSwagger();
-
-builder.Services.AddScoped<CriarContaHandler>();
-builder.Services.AddScoped<GerarTokenHandler>();
-
-var app = builder.Build();
-
-if (app.Environment.IsDevelopment())
+public class Program
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    public static void Main(string[] args)
+    {
+        CreateHostBuilder(args).Build().Run();
+    }
+
+    public static IHostBuilder CreateHostBuilder(string[] args) =>
+        Host.CreateDefaultBuilder(args)
+            .ConfigureWebHostDefaults(webBuilder =>
+            {
+                webBuilder.UseStartup<Startup>();
+            });
 }
-
-app.UseHttpsRedirection();
-
-app.UseAuthorization();
-
-app.MapControllers();
-
-app.Run();
