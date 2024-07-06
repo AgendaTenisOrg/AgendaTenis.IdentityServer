@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34928.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D7497C2B-4A35-4C77-9427-86E8EB8B0685}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ports", "ports", "{EB789960-4828-4A28-B967-E83D8B44EDCA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core", "core", "{83240AAE-E6E3-46FE-89C4-CCE9EE3F72C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgendaTenis.IdentityServer.Core", "src\core\AgendaTenis.IdentityServer.Core\AgendaTenis.IdentityServer.Core.csproj", "{CD93FD5B-2A39-4644-AFED-32C5B9DC6F80}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "infra", "infra", "{9AE7B183-A545-4289-8F8F-07F1E103CD9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgendaTenis.Notificacoes", "src\infra\AgendaTenis.Notificacoes\AgendaTenis.Notificacoes.csproj", "{F3D221A7-F33A-4F4C-A251-61B2F9C611FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgendaTenis.IdentityServer.WebApi", "src\ports\AgendaTenis.IdentityServer.WebApi\AgendaTenis.IdentityServer.WebApi.csproj", "{7EB1F73E-572C-42A6-A676-4F34B889A356}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD93FD5B-2A39-4644-AFED-32C5B9DC6F80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD93FD5B-2A39-4644-AFED-32C5B9DC6F80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD93FD5B-2A39-4644-AFED-32C5B9DC6F80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD93FD5B-2A39-4644-AFED-32C5B9DC6F80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3D221A7-F33A-4F4C-A251-61B2F9C611FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3D221A7-F33A-4F4C-A251-61B2F9C611FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3D221A7-F33A-4F4C-A251-61B2F9C611FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3D221A7-F33A-4F4C-A251-61B2F9C611FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EB1F73E-572C-42A6-A676-4F34B889A356}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EB1F73E-572C-42A6-A676-4F34B889A356}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EB1F73E-572C-42A6-A676-4F34B889A356}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EB1F73E-572C-42A6-A676-4F34B889A356}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EB789960-4828-4A28-B967-E83D8B44EDCA} = {D7497C2B-4A35-4C77-9427-86E8EB8B0685}
+		{83240AAE-E6E3-46FE-89C4-CCE9EE3F72C7} = {D7497C2B-4A35-4C77-9427-86E8EB8B0685}
+		{CD93FD5B-2A39-4644-AFED-32C5B9DC6F80} = {83240AAE-E6E3-46FE-89C4-CCE9EE3F72C7}
+		{9AE7B183-A545-4289-8F8F-07F1E103CD9C} = {D7497C2B-4A35-4C77-9427-86E8EB8B0685}
+		{F3D221A7-F33A-4F4C-A251-61B2F9C611FB} = {9AE7B183-A545-4289-8F8F-07F1E103CD9C}
+		{7EB1F73E-572C-42A6-A676-4F34B889A356} = {EB789960-4828-4A28-B967-E83D8B44EDCA}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {808D6AA6-3AA0-4E52-8DCD-9F86B629EB08}
+	EndGlobalSection
+EndGlobal
