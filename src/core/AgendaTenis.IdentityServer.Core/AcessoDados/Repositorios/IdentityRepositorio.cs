@@ -19,7 +19,7 @@ public class IdentityRepositorio : IIdentityRepositorio
             .AnyAsync(usuario => usuario.Email == email);
     }
 
-    public async Task<Guid> Inserir(UsuarioEntity entity)
+    public async Task<int> Inserir(UsuarioEntity entity)
     {
         var resultado = (await _context.Usuario
             .AddAsync(entity)).Entity;

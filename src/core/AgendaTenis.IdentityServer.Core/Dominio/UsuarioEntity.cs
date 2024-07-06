@@ -16,12 +16,11 @@ public class UsuarioEntity
         _usuarioEntityValidator.ValidateAndThrow(this);
         _hasher = hasher;
 
-        Id = Guid.NewGuid();
         Email = email;
         Senha = _hasher.HashSenha(this, senha);
     }
 
-    public Guid Id { get; private set; }
+    public int Id { get; private set; }
     public string Email { get; private set; }
     public string Senha { get; private set; }
 }
