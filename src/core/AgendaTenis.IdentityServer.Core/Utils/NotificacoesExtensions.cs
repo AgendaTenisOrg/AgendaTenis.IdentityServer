@@ -1,5 +1,5 @@
-﻿using AgendaTenis.Notificacoes;
-using AgendaTenis.Notificacoes.Enums;
+﻿using AgendaTenis.Notificacoes.Core;
+using AgendaTenis.Notificacoes.Core.Enums;
 using FluentValidation;
 using FluentValidation.Results;
 

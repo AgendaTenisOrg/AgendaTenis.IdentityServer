@@ -2,6 +2,8 @@
 using AgendaTenis.IdentityServer.Core.Dominio;
 using AgendaTenis.IdentityServer.Core.Token;
 using AgendaTenis.IdentityServer.Core.Utils;
+using AgendaTenis.Notificacoes.Core;
+using AgendaTenis.Notificacoes.Core.Enums;
 using System.Security.Claims;
 
 namespace AgendaTenis.IdentityServer.Core.Aplicacao.GerarToken;
@@ -51,12 +53,12 @@ public class GerarTokenHandler
     {
         return new GerarTokenResponse()
         {
-            Notificacoes = new List<Notificacoes.Notificacao>()
+            Notificacoes = new List<Notificacao>()
             {
-                new Notificacoes.Notificacao()
+                new Notificacao()
                 {
                     Mensagem = "E-mail ou senha incorretos",
-                    Tipo = Notificacoes.Enums.TipoNotificacaoEnum.Erro
+                    Tipo = TipoNotificacaoEnum.Erro
                 }
             }
         };

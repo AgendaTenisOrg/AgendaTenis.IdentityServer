@@ -1,4 +1,4 @@
-﻿using AgendaTenis.Notificacoes;
+﻿using AgendaTenis.Notificacoes.Core;
 
 namespace AgendaTenis.IdentityServer.Core.Aplicacao.CriarConta;
 
