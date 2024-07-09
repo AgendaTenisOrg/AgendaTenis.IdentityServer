@@ -31,7 +31,9 @@ public class Startup
 
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IdentityDbContext identityDbContext)
     {
-        if (env.IsDevelopment())
+        Console.WriteLine(env.EnvironmentName);
+
+        if (env.IsDevelopment() || env.EnvironmentName == "Container")
         {
             // Em ambiente de desenvolvimento a aplicação já aplica as migrations para deixar o banco de dados pronto
             identityDbContext.Database.Migrate();
