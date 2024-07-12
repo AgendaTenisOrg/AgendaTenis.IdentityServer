@@ -19,6 +19,10 @@ public class IdentityController : ControllerBase
     public async Task<IActionResult> GerarToken([FromServices] GerarTokenHandler handler, GerarTokenCommand command)
     {
         var response = await handler.Handle(command, new CancellationToken());
+
+        if (response.Notificacoes?.Count > 0)
+            return BadRequest("Email ou senha incorretos");
+
         return Ok(response);
     }
 }
