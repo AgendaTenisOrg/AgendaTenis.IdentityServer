@@ -48,3 +48,6 @@ Segue a descrição técnica do AgendaTenis.IdentityServer.
 ### Docker
 - Criei um arquivo Dockerfile na raiz do repositório
 - Utilize as instruções presentes na seção *Como executar* do repositório [Agte](https://github.com/AgendaTenisOrg/AgendaTenis.WebApp) para executar a stack inteira da aplicação
+
+## Considerações sobre o projeto
+- A implementação atual é bastante simples, mas futuramente vou alterar a implementação para utilizar uma biblioteca robusta como AspNet.Core.Identity ou um serviço como Keycloak.
